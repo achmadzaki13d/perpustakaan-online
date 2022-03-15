@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>tes</h1>
-    <h2>udh saya revisi bro</h2>
+
 </body>
 </html>
