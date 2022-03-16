@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\testController;
+use App\Http\Controllers\authController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +17,7 @@ use App\Http\Controllers\testController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', [authController::class, 'login'])->name('login');
+Route::get('/register', [authController::class, 'register'])->name('register');
+Route::post('/register/register-post', [authController::class, 'registerStore'])->name('register-post');
