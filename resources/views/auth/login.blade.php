@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- App css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
-        <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <link href="{{ asset('template/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('template/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="{{ asset('template/assets/css/app-dark.min.css') }}" rel="stylesheet" type="text/css" id="dark-style" />
 
     </head>
 
@@ -23,7 +23,7 @@
                             <!-- Logo -->
                             <div class="card-header pt-4 pb-4 text-center bg-primary">
                                 <a href="index.html">
-                                    <span><img src="assets/images/logo.png" alt="" height="18"></span>
+                                    <span><img src="{{ asset('template/assets/images/logo.png') }}" alt="" height="18"></span>
                                 </a>
                             </div>
 
@@ -38,7 +38,7 @@
 
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                        <input class="form-control" type="email" id="emailaddress" placeholder="Enter your email">
                                     </div>
 
                                     <div class="mb-3">
@@ -60,7 +60,8 @@
                                     </div>
 
                                     <div class="mb-3 mb-0 text-center">
-                                        <button class="btn btn-primary" type="submit"> Log In </button>
+                                        <!-- <button class="btn btn-primary" type="submit"> Log In </button> -->
+                                        <a href="{{route('dashboard')}}" class="btn btn-primary">login</a>
                                     </div>
 
                                 </form>
@@ -88,8 +89,8 @@
         </footer>
 
         <!-- bundle -->
-        <script src="assets/js/vendor.min.js"></script>
-        <script src="assets/js/app.min.js"></script>
+        <script src="{{ asset('template/assets/js/vendor.min.js') }}"></script>
+        <script src="{{ asset('template/assets/js/app.min.js') }}"></script>
         
     </body>
 </html>
