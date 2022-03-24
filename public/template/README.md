@@ -1,193 +1,89 @@
-<p align="center">
-   <a href="https://themeselection.com/products/sneat-free-bootstrap-html-admin-template/" target="_blank">
-      <img src="https://user-images.githubusercontent.com/749684/150333149-805037bc-8874-4a1f-876a-61a9683f8ef5.png" alt="sneat-logo" width="30px" height="auto">
-   </a>
-</p>
+# dmin_dashbaord_v18_html_css_js_bootstap5
 
-<h1 align="center">
-   <a href="https://themeselection.com/products/sneat-free-bootstrap-html-admin-template/" target="_blank" align="center">
-      Sneat - Free Bootstrap 5 HTML Admin Template
-   </a>
-</h1>
+dmin_dashbaord_v18_html_css_js_bootstap5
 
-<p align="center">Most Powerful & Comprehensive Free Bootstrap 5 HTML Admin Dashboard Template built for developers!</p>
+## Getting started
 
-![GitHub](https://img.shields.io/github/license/themeselection/sneat-html-admin-template-free) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/themeselection/sneat-html-admin-template-free) ![GitHub issues](https://img.shields.io/github/issues/themeselection/sneat-html-admin-template-free) ![GitHub closed issues](https://img.shields.io/github/issues-closed/themeselection/sneat-html-admin-template-free) ![Twitter Follow](https://img.shields.io/twitter/follow/Theme_Selection?style=social)
+To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-[![Sneat - Bootstrap 5 HTML Admin Template Demo Screenshot](https://user-images.githubusercontent.com/80033712/153581472-452394ee-327a-4d00-a41a-c6e8036b7096.png)](https://themeselection.com/products/sneat-free-bootstrap-html-admin-template/)
+Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
-## Introduction 🚀
+## Add your files
 
-If you’re a developer looking for most Powerful & comprehensive [**Free Bootstrap 5 HTML Admin Template**](https://themeselection.com/products/sneat-free-bootstrap-html-admin-template/) built for developers, rich with features, and highly customizable look no further than Sneat. We’ve followed the highest industry standards to bring you the very best admin template that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
+- [ ] [Create](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
+- [ ] [Add files using the command line](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-Build premium quality applications with ease. Use our innovative [bootstrap admin templates](https://themeselection.com/products/category/bootstrap-admin-templates/) to create eye-catching, high-quality WebApps. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
-
-[View Demo](https://themeselection.com/demo/sneat-bootstrap-html-admin-template-free/html/)
-
-## Installation ⚒️
-
-Automate time-consuming or repetitive tasks in your development workflow using Gulp 🥤
-
-> Please note, the use of Node, Webpack & Gulp and their advanced settings are totally optional. You can use and customize the template without using them too.
-
-Installing Node & Gulp and running it is super easy in Sneat, please follow these steps and you should be ready to rock 🤘
-
-1. First of all, make sure you have installed [Node](https://nodejs.org/en/) (LTS). If Node.js is already installed in your system, make sure the installed version is `LTS` and jump to step 2
-
-2. Install the Gulp CLI: Open Terminal/Command Prompt and run the following command and wait until it finishes. If you have already installed Gulp CLI, you can skip this step and jump to step 3.
-
-```bash
-npm install --global gulp-cli
+```
+cd existing_repo
+git remote add origin https://gitlab.com/SoengSouy/dmin_dashbaord_v18_html_css_js_bootstap5.git
+git branch -M main
+git push -uf origin main
 ```
 
-3. Navigate to the Sneat root directory and run following command to install our local dependencies listed in `package.json`. You can use `npm` OR `yarn` as per your preference.
+## Integrate with your tools
 
-> It is recommended to use Yarn
+- [ ] [Set up project integrations](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/user/project/integrations/)
 
-```bash
-# For npm
-npm install --legacy-peer-deps
+## Collaborate with your team
 
-# For Yarn
-yarn
-```
+- [ ] [Invite team members and collaborators](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/user/project/members/)
+- [ ] [Create a new merge request](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
+- [ ] [Automatically close issues from merge requests](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
+- [ ] [Automatically merge when pipeline succeeds](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
-4. Now, you are ready to run `npm` tasks, below command will start the server and watch the code using [browsersync](https://browsersync.io/). Open [http://localhost:3000/](http://localhost:3000/) to check your development 🚀.
+## Test and Deploy
 
-```bash
-# npm
-npm run serve
+Use the built-in continuous integration in GitLab.
 
-# yarn
-yarn serve
-```
+- [ ] [Get started with GitLab CI/CD](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/ci/quick_start/index.html)
+- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://docs.gitlab.com/ee/user/application_security/sast/)
 
-## Available Tasks 🧑‍💻
+***
 
-Open console/terminal, go to the Sneat root directory and run `npm run {task_name}`.i.e To generate build run `npm run build`.
+# Editing this README
 
-Run a task with specified environment(development/production) just execute the task with `--env={environment}` option, i.e. `npm run build --env=production`.
+When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://gitlab.com/-/experiment/new_project_readme_content:f817a7482c441d24fef7b1689abd20d9?https://www.makeareadme.com/) for this template.
 
-> **Tip:** Use `npm run` command to list all predefined npm tasks from `package.json` file.
+## Suggestions for a good README
+Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
-## What's Included 📦
+## Name
+Choose a self-explaining name for your project.
 
-- Dashboard
-- Layouts
-  - Without menu
-  - Without Navbar
-  - Container
-  - Fluid
-  - Blank
-- Pages
-  - Account Settings
-  - Login
-  - Register
-  - Forgot Password
-  - Error
-  - Under Maintenance
-- Cards
-- User Interface
-  - **All Bootstrap Components**
-- Extended UI
-  - Perfect Scrollbar
-  - Text Divider
-- Boxicon
-- Form Elements
-  - Basic Inputs
-  - Input Groups
-- Form Layout
-  - Vertical Form
-  - Horizontal Form
-- Tables
+## Description
+Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-## What's in Premium Version 💎
+## Badges
+On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
-| Sneat Free Version                                                                        | Sneat Premium Version                                                                                                            |
-| ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| [Demo](https://themeselection.com/demo/sneat-bootstrap-html-admin-template-free/html/)    | [Demo](https://themeselection.com/demo/sneat-bootstrap-html-admin-template/html/vertical-menu-template/)                         |
-| [Download](https://themeselection.com/products/sneat-free-bootstrap-html-admin-template/) | [Purchase](https://themeselection.com/products/sneat-bootstrap-html-admin-template/)                                             |
-| Single vertical Menu                                                                      | Vertical Menu + Horizontal Menu                                                                                                  |
-| Simple Light Style                                                                        | Light & Dark Style                                                                                                               |
-| Default Theme                                                                             | Default, Semi Dark & Bordered Themes                                                                                             |
-| Fixed Layout(Menu)                                                                        | Fixed & Static Layout(Menu)                                                                                                      |
-| 1 Simple Dashboard                                                                        | 3 Niche Dashboards                                                                                                               |
-| -                                                                                         | Multiple Ready to use Application like Calendar, Invoice, Users List, Users View, Roles and Permission etc.                      |
-| Simple From Elements                                                                      | Advance form elements, validation & form wizard                                                                                  |
-| Basic Cards                                                                               | Basic, Advance , Statistics, Analytics, Gamifications and Actions Cards                                                          |
-| Basic User Interface(Components)                                                          | Advance and Custom User Interfaces(Components)                                                                                   |
-| Two Extended Components                                                                   | Twelve Ready to use Extended Components                                                                                          |
-| -                                                                                         | Quick Search - Quickly navigate between pages (w/ hotkey support)                                                                |
-| Basic Pages                                                                               | Authentication Pages in 2 Variants + Ready to use pages like User Profile, Account Settings,FAQ, Help Center, Pricing, Misc etc. |
-| -                                                                                         | 3D Characters + Illustrations                                                                                                    |
-| Basic tables                                                                              | Advanced tables                                                                                                                  |
-| -                                                                                         | Quick customization using theme config file                                                                                      |
-| -                                                                                         | Leaflet Maps                                                                                                                     |
-| 1 Chart Library                                                                           | 2 Chart Libraries                                                                                                                |
-| -                                                                                         | Multiple Navbar & Menu Options                                                                                                   |
-| -                                                                                         | Starter-kit                                                                                                                      |
-| -                                                                                         | Internationalization support                                                                                                     |
-| -                                                                                         | RTL Support                                                                                                                      |
-| Regular Support                                                                           | Priority Support                                                                                                                 |
-| Detailed Documentation                                                                    | Detailed Documentation                                                                                                           |
+## Visuals
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-## Documentation 📜
+## Installation
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-Check out our live [Documentation](https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/)
+## Usage
+Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-## Browser Support 🖥️
+## Support
+Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
-At present, we officially aim to support the last two versions of the following browsers:
+## Roadmap
+If you have ideas for releases in the future, it is a good idea to list them in the README.
 
-- Chrome (latest)
-- FireFox (latest)
-- Safari (latest)
-- Microsoft Edge (latest)
-- Opera (latest)
+## Contributing
+State if you are open to contributions and what your requirements are for accepting them.
 
-## Useful Links 🎁
+For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
 
-- [Freebies](https://themeselection.com/products/category/download-free-admin-templates/)
-- [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/)
-- [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
+You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
-## Support 👨‍💻
+## Authors and acknowledgment
+Show your appreciation to those who have contributed to the project.
 
-We use GitHub issues as support tickets to manage Item support.
+## License
+For open source projects, say how it is licensed.
 
-1. In order to raise the GitHub issue, you must have a github account. [Raise a Issue](https://github.com/themeselection/sneat-html-admin-template-free/issues)
+## Project status
+If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
 
-## License ©
-
-- Copyright © [ThemeSelection](https://themeselection.com/)
-- Licensed under [MIT](https://github.com/themeselection/sneat-html-admin-template-free/blob/master/LICENSE.md)
-
-## Contributing 🦸
-
-Contribution are always welcome and recommended! Here is how:
-
-- Fork the repository ([here is the guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)).
-- Clone to your machine `git clone https://github.com/YOUR_USERNAME/REPO_URL` Make your changes
-- Create a pull request
-
-### Contribution Requirements 🧰
-
-- When you contribute, you agree to give a non-exclusive license to ThemeSelection to use that contribution in any context as we (ThemeSelection) see appropriate.
-- If you use content provided by another party, it must be appropriately licensed using an open source license.
-- Contributions are only accepted through Github pull requests.
-- Finally, contributed code must work in all supported browsers.
-
-## Creators 😇
-
-- [ThemeSelection](https://themeselection.com)
-
-## Changelog 📆
-
-Please refer to the [CHANGELOG](https://themeselection.com/demo/sneat-bootstrap-html-admin-template-free/changelog.html) file. We will add a detailed release notes to each new release.
-
-## Social Media 🌍
-
-- Twitter : [https://twitter.com/Theme_Selection](https://twitter.com/Theme_Selection)
-- Facebook : [https://www.facebook.com/ThemeSelections/](https://www.facebook.com/ThemeSelections/)
-- Pinterest : [https://pinterest.com/themeselect/](https://pinterest.com/themeselect/)
-- Instagram : [https://www.instagram.com/themeselection/](https://www.instagram.com/themeselection/)

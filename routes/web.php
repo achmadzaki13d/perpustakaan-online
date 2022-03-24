@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authController;
+use App\Http\Controllers\dashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// login
 Route::get('/login', [authController::class, 'login'])->name('login');
 Route::get('/register', [authController::class, 'register'])->name('register');
 Route::post('/register/register-post', [authController::class, 'registerStore'])->name('register-post');
+
+// konten
+Route::get('/dashboard', [dashboardController::class, 'index'])->name('dashboard');
