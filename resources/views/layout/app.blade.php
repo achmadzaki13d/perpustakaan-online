@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Starter Page | Hyper - Responsive Bootstrap 5 Admin Dashboard</title>
+        <title>@yield('title')</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- App css -->
@@ -22,10 +22,14 @@
                 <!-- LOGO -->
                 <a href="index.html" class="logo text-center logo-light">
                     <span class="logo-lg">
-                        <img src="{{ asset('template/assets/images/logo.png') }}" alt="" height="16">
+                        <h4 class="pt-3 text-white">Perpustakaan Online</h4>
+                        <!-- <img src="{{ asset('template/assets/images/logo.png') }}" alt="" height="16"> -->
                     </span>
                     <span class="logo-sm">
-                        <img src="{{ asset('template/assets/images/logo_sm.png') }}" alt="" height="16">
+                        <!-- <img src="{{ asset('template/assets/images/logo_sm.png') }}" alt="" height="16"> -->
+                        <div class="text-white fs-2">
+                            <i class="mdi mdi-book-open-variant"></i>
+                        </div>
                     </span>
                 </a>
 
@@ -43,21 +47,7 @@
 
                     <!--- Sidemenu -->
                     <ul class="side-nav">
-
-                        <li class="side-nav-title side-nav-item">Navigation</li>
-
-                        <li class="side-nav-item">
-                            <a href="#" class="side-nav-link">
-                                <i class="uil-home-alt"></i>
-                                <span> Dashboards </span>
-                            </a>
-                        </li>
-                        <li class="side-nav-item">
-                            <a href="#" class="side-nav-link">
-                                <i class="uil-comments-alt"></i>
-                                <span> Chat </span>
-                            </a>
-                        </li>
+                        @include('layout.sidebar')
                     </ul>
 
                 </div>
@@ -133,7 +123,7 @@
                             <li class="dropdown notification-list">
                                 <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                     <span class="account-user-avatar ms-lg-1"> 
-                                        <img src="{{ asset('template/assets/images/users/avatar-1.jpg') }}" alt="user-image" class="rounded-circle">
+                                        <img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?t=st=1648166456~exp=1648167056~hmac=cf3bf167b21fa799033258bbb7ad13dfe29d4bc8de795106834e598ff7a34d5e&w=740" alt="user-image" class="rounded-circle">
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
@@ -147,25 +137,6 @@
                                         <i class="mdi mdi-account-circle me-1"></i>
                                         <span>My Account</span>
                                     </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="mdi mdi-account-edit me-1"></i>
-                                        <span>Settings</span>
-                                    </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="mdi mdi-lifebuoy me-1"></i>
-                                        <span>Support</span>
-                                    </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="mdi mdi-lock-outline me-1"></i>
-                                        <span>Lock Screen</span>
-                                    </a>
-
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <i class="mdi mdi-logout me-1"></i>
@@ -199,12 +170,11 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
-                                            <li class="breadcrumb-item active">Starter</li>
+                                            <li class="breadcrumb-item"><a href="#">App</a></li>
+                                            <li class="breadcrumb-item active">@yield('breadcrumb')</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Startersss</h4>
+                                    <h4 class="page-title">@yield('page-title')</h4>
                                     <!-- content -->
                                     @yield('content')
                                 </div>
@@ -215,26 +185,6 @@
                     </div> <!-- container -->
 
                 </div> <!-- content -->
-
-                <!-- Footer Start -->
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <script>document.write(new Date().getFullYear())</script> © Hyper - Coderthemes.com
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text-md-end footer-links d-none d-md-block">
-                                    <a href="javascript: void(0);">About</a>
-                                    <a href="javascript: void(0);">Support</a>
-                                    <a href="javascript: void(0);">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- end Footer -->
-
             </div>
 
             <!-- ============================================================== -->
