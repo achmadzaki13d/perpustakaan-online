@@ -6,7 +6,7 @@
     </a>
 </li>
 <li class="side-nav-item">
-    <a href="#" class="side-nav-link">
+    <a href="{{route('listbuku')}}" class="side-nav-link">
         <i class="mdi mdi-book-open-page-variant-outline"></i>
         <span> Buku </span>
     </a>

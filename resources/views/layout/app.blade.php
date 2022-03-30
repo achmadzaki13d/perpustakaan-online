@@ -71,7 +71,7 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-animated dropdown-lg p-0">
                                     <form class="p-3">
-                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                        <input type="text" class="form-control" placeholder="Cari ..." aria-label="Recipient's username">
                                     </form>
                                 </div>
                             </li>
@@ -152,9 +152,9 @@
                         <div class="app-search dropdown d-none d-lg-block">
                             <form>
                                 <div class="input-group">
-                                    <input type="text" class="form-control dropdown-toggle" placeholder="Search..." id="top-search">
+                                    <input type="text" class="form-control dropdown-toggle" placeholder="Cari..." id="top-search">
                                     <span class="mdi mdi-magnify search-icon"></span>
-                                    <button class="input-group-text btn-primary" type="submit">Search</button>
+                                    <button class="input-group-text btn-primary" type="submit">Cari</button>
                                 </div>
                             </form>
                         </div>

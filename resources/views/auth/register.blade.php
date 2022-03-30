@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Login</title>
+        <title>Register</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- App css -->
@@ -19,33 +19,31 @@
                 <div class="row justify-content-center">
                     <div class="col-xxl-4 col-lg-5">
                         <div class="card">
-
-                            <!-- Logo -->
-                            <div class="card-header pt-4 pb-4 text-center bg-primary">
-                                <a href="index.html">
-                                    <span><img src="{{ asset('template/assets/images/logo.png') }}" alt="" height="18"></span>
-                                </a>
-                            </div>
-
                             <div class="card-body p-4">
-                                
                                 <div class="text-center w-75 m-auto">
-                                    <h4 class="text-dark-50 text-center pb-0 fw-bold">Sign In</h4>
-                                    <p class="text-muted mb-4">Enter your email address and password to access admin panel.</p>
+                                    <h4 class="text-dark-50 text-center pb-0 fw-bold">Daftar Akun</h4>
+                                    <p class="text-muted mb-4">Silahkan Buat Akun Terlebih Dahulu</p>
                                 </div>
 
-                                <form action="#">
-
+                                <form action="{{route('register-post')}}" method="post">
+                                    @csrf
                                     <div class="mb-3">
-                                        <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" placeholder="Enter your email">
+                                        <label for="nama" class="form-label">Nama</label>
+                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap">
                                     </div>
-
+                                    <div class="mb-3">
+                                        <label for="no_hp" class="form-label">Nomor Telepon</label>
+                                        <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="Nomor Telepon Aktif">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email">
+                                    </div>
                                     <div class="mb-3">
                                         <a href="pages-recoverpw.html" class="text-muted float-end"><small>Forgot your password?</small></a>
                                         <label for="password" class="form-label">Password</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                            <input type="password" id="password" class="form-control" name="password" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
                                                 <span class="password-eye"></span>
                                             </div>
@@ -60,8 +58,7 @@
                                     </div>
 
                                     <div class="mb-3 mb-0 text-center">
-                                        <!-- <button class="btn btn-primary" type="submit"> Log In </button> -->
-                                        <a href="{{route('dashboard')}}" class="btn btn-primary">login</a>
+                                        <button class="btn btn-primary" type="submit">Daftar</button>
                                     </div>
 
                                 </form>
