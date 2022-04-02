@@ -1,74 +1,59 @@
 @extends('layout.app')
 @section('title', 'List Buku')
 @section('page-title', 'List Buku')
+@section('breadcrumb', 'Buku')
 @section('content')
-<div class="row">
-    <div class="col-md-6 col-lg-3">
-        <div class="card d-block">
-            <img class="img-fluid" src="{{ asset('template/img/book.jpg') }}" alt="Card image cap">
-            <div class="card-body">
-                <h5>Judul Buku</h5>
-                <p class="card-text">Some quick example text to build on the card title and make
-                    up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary btn-sm">Pinjam</a>
-            </div> <!-- end card-body-->
-        </div> <!-- end card-->
+<table id="basic-datatable" class="table dt-responsive nowrap w-100">
+    <!-- Standard modal -->
+    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#standard-modal">Tambah</button>
+    <div id="standard-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="standard-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="standard-modalLabel">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-6 col-lg-3">
-        <div class="card d-block">
-            <img class="img-fluid" src="{{ asset('template/img/book.jpg') }}" alt="Card image cap">
-            <div class="card-body">
-                <h5>Judul Buku</h5>
-                <p class="card-text">Some quick example text to build on the card title and make
-                    up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary btn-sm">Pinjam</a>
-            </div> <!-- end card-body-->
-        </div> <!-- end card-->
-    </div>
-    <div class="col-md-6 col-lg-3">
-        <div class="card d-block">
-            <img class="img-fluid" src="{{ asset('template/img/book.jpg') }}" alt="Card image cap">
-            <div class="card-body">
-                <h5>Judul Buku</h5>
-                <p class="card-text">Some quick example text to build on the card title and make
-                    up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary btn-sm">Pinjam</a>
-            </div> <!-- end card-body-->
-        </div> <!-- end card-->
-    </div>
-    <div class="col-md-6 col-lg-3">
-        <div class="card d-block">
-            <img class="img-fluid" src="{{ asset('template/img/book.jpg') }}" alt="Card image cap">
-            <div class="card-body">
-                <h5>Judul Buku</h5>
-                <p class="card-text">Some quick example text to build on the card title and make
-                    up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary btn-sm">Pinjam</a>
-            </div> <!-- end card-body-->
-        </div> <!-- end card-->
-    </div>
-</div>
 
-<!-- pagination -->
-<div class="position-relative">
-    <div class="position-absolute top-0 start-50 translate-middle-x">
-        <nav>
-            <ul class="pagination pagination-rounded mb-0">
-                <li class="page-item">
-                    <a class="page-link" href="javascript: void(0);" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="javascript: void(0);">1</a></li>
-                <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a></li>
-                <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a></li>    
-                <li class="page-item">
-                    <a class="page-link" href="javascript: void(0);" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
+    <thead>
+        <tr>
+            <th>Cover Buku</th>
+            <th>Kode Buku</th>
+            <th>Nama Buku</th>
+            <th>Tahun</th>
+            <th>Stok</th>
+            <th>Opsi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tiger Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+    </tbody>
+</table>
+
+@push('data-tables')
+<!-- Datatables js -->
+<script src="{{ asset('template/assets/js/vendor/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('template/assets/js/vendor/dataTables.bootstrap5.js') }}"></script>
+<script src="{{ asset('template/assets/js/vendor/dataTables.responsive.min.js') }}"></script>
+<script src="{{ asset('template/assets/js/vendor/responsive.bootstrap5.min.js') }}"></script>
+
+<!-- Datatable Init js -->
+<script src="{{ asset('template/assets/js/pages/demo.datatable-init.js') }}"></script>
+@endpush
 @endsection

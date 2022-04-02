@@ -11,8 +11,15 @@
         <link href="{{ asset('template/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" id="light-style">
         <link href="{{ asset('template/assets/css/app-dark.min.css') }}" rel="stylesheet" type="text/css" id="dark-style">
 
+        <!-- Datatables css -->
+        <link href="{{ asset('template/assets/css/vendor/dataTables.bootstrap5.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('template/assets/css/vendor/responsive.bootstrap5.css') }}" rel="stylesheet" type="text/css" />
+
+        @livewireStyles
+
     </head>
 
+    @livewireScripts
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
         <!-- Begin page -->
         <div class="wrapper">
@@ -79,7 +86,7 @@
                             <li class="dropdown notification-list">
                                 <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                     <i class="dripicons-bell noti-icon"></i>
-                                    <span class="noti-icon-badge"></span>
+                                    <!-- <span class="noti-icon-badge"></span> -->
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg">
 
@@ -288,10 +295,10 @@
         <div class="rightbar-overlay"></div>
         <!-- /End-bar -->
 
-
         <!-- bundle -->
         <script src="{{ asset('template/assets/js/vendor.min.js') }}"></script>
         <script src="{{ asset('template/assets/js/app.min.js') }}"></script>
         
+        @stack('data-tables')
     </body>
 </html>

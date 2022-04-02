@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authController;
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\listBukuController;
+use App\Http\Controllers\dendaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,4 @@ Route::post('/register/register-post', [authController::class, 'registerStore'])
 // konten
 Route::get('/dashboard', [dashboardController::class, 'index'])->name('dashboard');
 Route::get('/list-buku', [listBukuController::class, 'index'])->name('listbuku');
+Route::get('/denda', [dendaController::class, 'index'])->name('denda');
