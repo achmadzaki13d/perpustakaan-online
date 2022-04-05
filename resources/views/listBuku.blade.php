@@ -36,12 +36,12 @@
     </thead>
     <tbody>
         <tr>
-            <td>Tiger Nixon</td>
-            <td>System Architect</td>
-            <td>Edinburgh</td>
-            <td>61</td>
+            <td>Buku TI</td>
+            <td>BP11AMP</td>
+            <td>Pemograman</td>
             <td>2011/04/25</td>
-            <td>$320,800</td>
+            <td>50</td>
+            <td>$300,000</td>
         </tr>
     </tbody>
 </table>
